@@ -89,12 +89,14 @@ body{
 }
 .city select{
     display: block;
+    border: none;
     width: 100%;
     background: none;
     color: #fff;
     padding: 5px 10px;
     border-radius: 15px;
     outline: 1px solid #fff;
+    
 }
 /* START DATE  */
 .date .container {
