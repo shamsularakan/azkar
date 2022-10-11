@@ -9,8 +9,10 @@ body{
 }
 :root{
     --10-px:10px;
-    --1c:#5B68F8;
-    --2c:#36E3FF;
+    --1c:#35b49f;
+    --2c:#AFD6BB;
+    --3c:#eca338;
+    --4c:#242F38;
 }
 .container{
     padding: 0 15px;
@@ -102,36 +104,45 @@ body{
 .date .container {
     display: grid;
     justify-content: space-between;
-    gap: 2.5%;
-    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 1%;
+    grid-template-columns: repeat(auto-fill, minmax(48.5%, 1fr));
 }
-.date .hijri{
-    background-color: var(--1c);
+@media (max-width: 768px) {
+    .date .container {
+        gap: 10px;  
+    }
 }
-.date .ad{
-    background-color: var(--1c);
-}
-.date .hijri,
-.date .ad {
+
+.date .content{
+    background-color: var(--2c);
     display: flex;
     align-items: center;
     padding: var(--10-px);
-    color: var(--2c);
+    color: var(--4c);
     border-radius:15px ;
-    justify-content: space-between;
+    
 }
-.date .hijri h1,
-.date .ad h1{
-    background-color: #fff;
-    color: var(--1c);
+.date .content h1{
+    margin-left: 15px;
+    background-color: var(--3c);
+    color: #fff;
     border-radius:50% ;
     width: 50px;
     height: 50px;
     padding: 2px;
     text-align: center;
+    
 }
-.date .hijri h4,
-.date .ad h4{
+.date .content .box{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .date .content .box{
+        flex-direction: column;
+    }
+}
+.date .content h4{
     color: #fff;
 }
 /* END DATE */
@@ -142,11 +153,61 @@ body{
     
 }
 .remember .container h5{
-    background-color: #eee;
+    background:linear-gradient(45deg, var(--2c),  var(--1c));
     padding-top: var(--10-px);
     padding-bottom: var(--10-px);
-    color: var(--1c);
+    color: var(--4cc);
     text-align: center;
     border-radius: 15px;
 }
 /* end remember */
+/* start prayer-time */
+.prayer-time {
+    margin-top: var(--10-px);
+    margin-bottom: var(--10-px);
+}
+.prayer-time .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+    gap: 10px;
+}
+.prayer-time .pray{
+    background-color: #EEE;
+    text-align: center;
+    border-radius: var(--10-px);
+    padding: 4px;
+    color: var(--4c);
+}
+.prayer-time .pray i{
+    color: var(--3c);
+}
+.prayer-time .pray h4{
+    color: var(--1c);
+}
+.prayer-time .pray h5{
+    color: var(--4c);
+}
+/* end prayer-time */
+/* start hadith */
+.hadith{
+    margin-top: var(--10-px);
+    margin-bottom: var(--10-px);
+}
+.hadith .content{
+    background-color: var(--3c);
+    padding: var(--10-px);
+   
+    border-radius: var(--10-px);
+    display: flex;
+    flex-direction: column;
+}
+.hadith .content .hokom{
+    text-align: left;
+    background-color: var(--2c);
+    width: fit-content;
+    padding: 4px 15px;
+    border-radius: 25px;
+    align-self: end;
+    
+}
+/* end hadith */
