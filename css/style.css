@@ -103,7 +103,7 @@ body{
     display: grid;
     justify-content: space-between;
     gap: 2.5%;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
 }
 .date .hijri{
     background-color: var(--1c);
@@ -118,7 +118,7 @@ body{
     padding: var(--10-px);
     color: var(--2c);
     border-radius:15px ;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .date .hijri h1,
 .date .ad h1{
@@ -135,3 +135,18 @@ body{
     color: #fff;
 }
 /* END DATE */
+/* start remember */
+.remember{
+    margin-top: var(--10-px);
+    margin-bottom: var(--10-px);
+    
+}
+.remember .container h5{
+    background-color: #eee;
+    padding-top: var(--10-px);
+    padding-bottom: var(--10-px);
+    color: var(--1c);
+    text-align: center;
+    border-radius: 15px;
+}
+/* end remember */
