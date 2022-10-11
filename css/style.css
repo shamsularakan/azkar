@@ -64,11 +64,19 @@ body{
     background:linear-gradient(45deg, var(--2c),  var(--1c));
     color: #fff;
     padding-right: 15px;
+    position: relative;
 }
 @media (max-width: 768px) {
     .time{
         border: none;
     }
+}
+.time > svg{
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .time .time-now{
     display: flex;
