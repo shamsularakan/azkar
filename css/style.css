@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+:root{
+    --10-px:10px;
+    --1c:#5B68F8;
+    --2c:#36E3FF;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    
+    
+}
+/* Extra small devices (phones, 600px and down) */
+/* @media (max-width: 600px) { }
+
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media (min-width: 600px) { }
+
+*/
+@media (max-width: 768px) {
+    .container{
+        width: 750px;
+        
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* end global */
+.time{
+    margin-top: var(--10-px);
+    margin-bottom: var(--10-px);
+    padding-top: var(--10-px);
+    padding-bottom: var(--10-px);
+    border-radius: var(--10-px);
+    background:linear-gradient(45deg, var(--2c),  var(--1c));
+    color: #fff;
+    padding-right: 15px;
+}
+@media (max-width: 768px) {
+    .time{
+        border: none;
+    }
+}
+.time .time-now{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+}
+.city{
+    width: 100px;
+}
+.city select{
+    display: block;
+    width: 100%;
+    background: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    outline: 1px solid #fff;
+}
